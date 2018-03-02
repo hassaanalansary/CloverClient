@@ -46,8 +46,8 @@ class CloverClient(object):
             return request.text
 
 
-merchantId = '76J5V198D5GRC'
-token = 'e3c4d4e0-2f93-d603-9297-0b70b929868b'
+merchantId = 'xxxxxxx'
+token = 'xxxxxx'
 clover_client = CloverClient(merchantId, token)
 # status, item_id = clover_client.add_item('tytytytytyt', 2454131, code=89934875)
 # print(item_id)
