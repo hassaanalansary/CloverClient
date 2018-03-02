@@ -39,6 +39,12 @@ class CloverClient(object):
         if request.status_code == 200:
             return True
 
+    def get_categories(self):
+        url = self.base_url + 'categories' + self.api_token
+        request = requests.get(url, headers=self.headers)
+        if request.status_code == 200:
+            return request.text
+
 
 merchantId = '76J5V198D5GRC'
 token = 'e3c4d4e0-2f93-d603-9297-0b70b929868b'
